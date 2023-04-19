@@ -1,9 +1,10 @@
 class Bucket:
-    def __init__(self, id, size, isOverflow=False):
+    def __init__(self, id, initialSize, isOverflow=False):
 
         self.id = id
         self.tuplas = []
-        self.size = size
+        self.initialSize = initialSize
+        self.size = initialSize
         self.nextBucket = None
         self.isOverflow = isOverflow
         self.collisions = 0
@@ -11,22 +12,17 @@ class Bucket:
 
     def add(self, tuple):
         if len(self.tuplas) == self.size:
-            if self.nextBucket == None:
-                self.nextBucket = Bucket(self.id, self.size, True)
-                self.overflows += 1
-            self.nextBucket.add(tuple)
-
-        else:
-            self.tuplas.append(tuple)
-            if self.isOverflow == True and len(self.tuplas) > 0:
-                self.collisions += 1
+            self.size += self.initialSize
+            self.overflows += 1       
+        self.tuplas.append(tuple)
+            
+        if len(self.tuplas) > self.initialSize:
+            self.collisions += 1
 
     def getCollisions(self):
-        soma = 0
-        soma += self.collisions
-        return soma + self.nextBucket.getCollisions() if self.nextBucket != None else soma
+    
+        return self.collisions 
 
     def getOverflows(self):
-        soma = 0
-        soma += self.overflows
-        return soma + self.nextBucket.getOverflows() if self.nextBucket != None else soma
+
+        return  self.overflows

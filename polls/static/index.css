@@ -1,0 +1,133 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+html{
+  height: 150%;
+  width: 100%;
+}
+body{
+
+    
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Title {
+  text-align: center;
+}
+
+div
+{
+   margin-right: 10%; 
+}
+
+.container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+ 
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.container-search{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.details div{
+  margin-right: 0%;
+}
+
+.details p{
+  font-size: 12px;
+}
+
+.container-table{
+  overflow-y: scroll;
+  height: 200px;
+ 
+  
+}
+
+
+
+tbody tr:first-child {
+    width: calc(100% - 1em);
+  }
+
+	table {
+			border-collapse: collapse;
+			
+			overflow-y: scroll;
+			
+
+		}
+
+		th, td {
+			padding: 8px;
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+      font-size: 12px;
+		}
+
+.container h3 {
+ margin-block-start: 0em;
+    margin-block-end: 0em;
+    
+}
+
+button {
+  background-color: #ffd343;
+  padding: 0.5rem 1rem; /* adjust the padding values to compress the button */
+  margin: 0.25rem; 
+  border-radius: 8px;
+  border-style: none;
+}
+
+div.container-result {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+label + input {
+  padding: 4px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+  input{
+     padding: 0.5rem 1rem; 
+      border-radius: 8px;
+      border-style: none;
+  }
+
+
+
+
+p {
+  font-size: 16px;
+  color: #ffd343;
+  margin-top: 0;
+}
