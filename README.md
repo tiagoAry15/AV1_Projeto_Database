@@ -36,5 +36,8 @@ Depois disso, visite http://localhost:8000/polls no seu navegador.
 Contribuições, problemas e solicitações de recursos são bem-vindos! Sinta-se à vontade para verificar issues page.
 
 Se você tem alguma dúvida, sinta-se à vontade para me contatar...
+## Demonstração da tela inicial
+![Screenshot do Projeto](./screenshot.png)
+
 
 
