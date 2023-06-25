@@ -19,11 +19,11 @@ Implementar uma interface gráfica ilustrando as estruturas de dados e o funcion
 ## :wrench: Instalação
 
 ```bash
-git clone https://github.com/your-username/django-hash-index.git
+git clone https://github.com/tiagoAry15/django-hash-index.git
 cd django-hash-index
 pip install -r requirements.txt
 python manage.py runserver
-Depois disso, visite http://localhost:8000 no seu navegador.
+Depois disso, visite http://localhost:8000/polls no seu navegador.
 ```
 ## :book: Uso
 - Carregue o arquivo de dados em memória
